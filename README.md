@@ -15,3 +15,11 @@ This problem requires identifying the top 'k' most frequent elements in a list o
 
 ### Approach
 The solution involves counting the frequency of each element in the list using a frequency mapping technique. The list of elements is then sorted by their frequency in descending order. Only the top 'k' elements by frequency are returned, providing the list of most frequent elements.
+
+## Problem 3: Group Anagrams
+
+### Description
+The challenge is to group words that are anagrams into separate lists. Anagrams are words or phrases that contain the same characters in the same frequencies but arranged differently.
+
+### Approach
+To efficiently group anagrams, the approach involves using a dictionary where each key represents a sorted version of the word, ensuring that all anagrams share the same key. Words are processed by sorting their characters, converting these sorted characters into a string, and using this string as a key in the dictionary. Each word is then added to the list corresponding to its key. This ensures that all words grouped under the same key are anagrams of each other, thus effectively grouping them together.
