@@ -14,10 +14,7 @@ class Solution:
                 list2 = list2.next
             current = current.next
 
-        # If one of the lists is not exhausted, append it to the result
-        if list1:
-            current.next = list1
-        elif list2:
-            current.next = list2
+        # Attach the remaining nodes from either list1 or list2
+        current.next = list1 if list1 is not None else list2
 
         return dummy.next
