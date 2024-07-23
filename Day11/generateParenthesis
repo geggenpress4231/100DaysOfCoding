@@ -13,7 +13,4 @@ class Solution:
         backtrack("", 0, 0)
         return result
 
-# Example usage:
-solution = Solution()
-n = 3
-print(solution.generateParenthesis(n))
+
