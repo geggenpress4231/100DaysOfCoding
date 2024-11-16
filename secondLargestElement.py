@@ -17,6 +17,4 @@ def find_second_largest(arr):
     
     return second_el
 
-# Example usage
-arr = [3, 5, 2, 9, 6]
-print("Second largest element is:", find_second_largest(arr))
+
